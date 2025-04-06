@@ -12,7 +12,7 @@ import { container, item } from "@/utils/animations";
 import { useUserContext } from "@/context/userContext";
 
 export default function Home() {
-  // useRedirect("/login");
+  useRedirect("/login");
   const { tasks, openModalForAdd, priority, setPriority } = useTasks();
 
   const filtered = filteredTasks(tasks, priority);
